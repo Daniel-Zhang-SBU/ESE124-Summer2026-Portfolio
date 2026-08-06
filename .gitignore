@@ -1,0 +1,19 @@
+# Compiled C files
+*.exe
+*.out
+*.o
+*.obj
+*.a
+*.so
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Secrets and temporary files
+.env
+*.log
+*~
+
