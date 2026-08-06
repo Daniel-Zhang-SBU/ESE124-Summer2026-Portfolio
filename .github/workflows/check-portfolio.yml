@@ -1,0 +1,19 @@
+name: Check My Portfolio
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    name: Check required files and BroBank
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get portfolio files
+        uses: actions/checkout@v4
+      - name: Check portfolio
+        run: bash tests/check_portfolio.sh
