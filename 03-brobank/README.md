@@ -9,13 +9,15 @@ Place the completed BroBank source and header files in this folder. Include file
 - `bank.h`
 - `sample_input.txt`
 - `sample_output.txt`
+- `balance.txt
 - Any additional `.c` or `.h` files used by your program
 
 The automatic check compiles every `.c` file directly inside this folder and confirms that the program runs and produces output. `sample_output.txt` documents the expected demonstration for a reviewer. Do not include menu prompts or other text in `sample_input.txt`; it should contain only the input a user would type.
 
 ## Program Purpose
 
-Summarize the features implemented in your BroBank program.
+Brobank features a 3 digit pin lock to access your account, actions deposits, withdraws, undos, and a interest rate calculator. Brobank will update your bank balance with every deposit, withdraw, and undo and additionally will save your balance everytime you quit the program. Brobank will also output an txt file with all your transactions history including the ones you undid. 
+
 
 ## File Organization
 
