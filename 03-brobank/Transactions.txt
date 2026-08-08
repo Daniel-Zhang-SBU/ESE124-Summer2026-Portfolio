@@ -1,0 +1,7 @@
+Type 		 amount 	 balance 	 time
+Deposit		 50.00		 550.00		 Sat Aug  8 13:54:22 2026
+
+Withdraw	 25.00		 525.00		 Sat Aug  8 13:54:23 2026
+
+Undo		 25.00		 550.00		 Sat Aug  8 13:54:24 2026
+
