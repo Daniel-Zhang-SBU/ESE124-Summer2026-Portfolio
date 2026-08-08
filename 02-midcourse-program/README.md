@@ -4,26 +4,44 @@ Place the source code for one mid-course program in this folder. Choose work tha
 
 ## Program Purpose
 
-Explain what the program does.
+The programs opens a file called grades.csv and computes the average of the student's scores that
+is inside the file. The program will safely close after displaying the average of all the students.
 
 ## Files
 
-List and describe every source and header file.
+-`midcourse_program.c`
+-`grades.csv`
 
 ## Compile and Run
 
 ```bash
-gcc -Wall -Wextra -std=c11 your_files.c -o midcourse_program
+gcc -Wall -Wextra -std=c11 midcourse_program.c -o midcourse_program
 ./midcourse_program
 ```
 
-Replace the command with the correct filenames for your program.
-
 ## Sample Input and Output
+Inputs
+Check grades.csv.
+The format is student name,score 1,score 2,score 3. No spaces allowed after comma
+If the line in grades.csv is not this format, the program will automatically reject that line.
 
-Provide at least one normal case and one edge case.
+grades.csv 
+Alice,88,92,79
+Bob,73,65,81
+Tom,74
+
+
+Output 
+Alice average 86.3
+Bob average 73.0
+Student Tom invalid line
 
 ## What I Learned
 
-Explain the design, the test cases, and one bug you fixed.
+Design: I designed the program to read the student names and their grades from a CSV file one line at a time using fgets. Each line is then seperated using sscanf and they are checked to make sure the student has three valid scores before the scores are included in the average. Invalid lines are rejected.
+
+The test cases I used are 2 valid lines inside grades.csv and invalid line. (See Sample Input and Output)
+
+One bug I fixed was that orignially for my sscanf I had spaces after every comma for every input. However the grades.csv do not have any spaces so it sscanf kept failing and no grade averages were being computed despite having a valid test case. 
+
 
