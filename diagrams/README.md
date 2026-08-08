@@ -11,5 +11,7 @@ Add at least one diagram or visualization in this folder. Examples include:
 
 Use a clear filename such as `brobank-module-diagram.png`. Explain the diagram briefly in this file and link to it below.
 
-![Replace with your diagram](brobank-module-diagram.png)
+![alt text](Brobank_diagram.png)
+
+The diagram is my program flowchart for my brobank code. It shows how brobank is suppose to work and the code written in 03-brobank implements it.
 
