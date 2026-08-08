@@ -30,8 +30,9 @@ that were asked by the user.
 ## Compile and Run
 
 ```bash
-gcc -Wall -Wextra -std=c11 main.c bank.c -o brobank
+make
 ./brobank
+make clean
 ```
 
 Adjust the command if your filenames are different.
