@@ -7,4 +7,4 @@ brobank: main.c $(Brobank)
 	$(CC) $(CFLAGS) main.c $(Brobank) -o brobank
 
 clean:
-	rm -f test.exe
+	del /Q brobank.exe
