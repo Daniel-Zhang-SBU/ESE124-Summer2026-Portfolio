@@ -1,0 +1,94 @@
+Input:589
++-------------------+
+|Welcome to BroBank!|
+|Author:Daniel Zhang|
+|Version: 1.0       |
+|Last update: 8/8/26|
++-------------------+
+
+Account balance: 500.00
+[1]Deposit
+[2]Withdraw
+[3]Undo
+[4]Transactions
+[5]Interest Rate Calculator
+[6]Quit
+Choose a numbered option:
+
+Input:1
+Enter Deposit amount:
+
+Input:50
+Account balance: 550.00
+[1]Deposit
+[2]Withdraw
+[3]Undo
+[4]Transactions
+[5]Interest Rate Calculator
+[6]Quit
+Choose a numbered option:
+
+Input:2
+Enter Withdraw amount:
+
+Input:25
+Account balance: 525.00
+[1]Deposit
+[2]Withdraw
+[3]Undo
+[4]Transactions
+[5]Interest Rate Calculator
+[6]Quit
+Choose a numbered option:
+
+Input:3
+Account balance: 550.00
+[1]Deposit
+[2]Withdraw
+[3]Undo
+[4]Transactions
+[5]Interest Rate Calculator
+[6]Quit
+Choose a numbered option:
+
+Input:4
+Type             amount          balance         time
+Deposit		 50.00		 550.00		 Sat Aug  8 13:54:22 2026
+
+Withdraw	 25.00		 525.00		 Sat Aug  8 13:54:23 2026
+
+Undo		 25.00		 550.00		 Sat Aug  8 13:54:24 2026
+ 
+Account balance: 550.00
+[1]Deposit
+[2]Withdraw
+[3]Undo
+[4]Transactions
+[5]Interest Rate Calculator
+[6]Quit
+Choose a numbered option:
+
+Input:5
+Input the amount of money you start of with:
+
+Input:500
+Input the interest in percent:
+
+Input:2.5
+Input the number of years:
+
+Input:5
+Year 1: 512.50
+Year 2: 525.31
+Year 3: 538.45
+Year 4: 551.91
+Year 5: 565.70
+
+Input:6
+Balance is saved to balance.txt and the transactions are saved to transactions.txt
+
+Input:ESE124
+Incorrect PIN or Invalid Input
+
+Input:ESE124
+Invalid deposit amount

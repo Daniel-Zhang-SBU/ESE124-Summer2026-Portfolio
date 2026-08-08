@@ -9,7 +9,8 @@ Place the completed BroBank source and header files in this folder. Include file
 - `bank.h`
 - `sample_input.txt`
 - `sample_output.txt`
-- `balance.txt
+- `balance.txt`
+- `Makefile`
 - Any additional `.c` or `.h` files used by your program
 
 The automatic check compiles every `.c` file directly inside this folder and confirms that the program runs and produces output. `sample_output.txt` documents the expected demonstration for a reviewer. Do not include menu prompts or other text in `sample_input.txt`; it should contain only the input a user would type.
@@ -21,7 +22,10 @@ Brobank features a 3 digit pin lock to access your account, actions deposits, wi
 
 ## File Organization
 
-Explain the responsibility of every source and header file.
+Bank.h is the header file that contains all the helper function names.
+Bank.c is the source file that contains all the helper function's function.
+Main.c is where the brobank is located and it calls on the helper functions to complete tasks
+that were asked by the user.
 
 ## Compile and Run
 
@@ -38,7 +42,11 @@ Add `sample_input.txt` and `sample_output.txt`, or show a representative session
 
 ## Design and Testing
 
-Explain your major design decisions, important test cases, and one meaningful bug you fixed.
+My main design choice was to first create a lock, then to add the functions for the brobank that we worked on throughout the semester. For example in week 1, we created the brobank banner and I added a similar code implement it. Then for the brobank functionality I tried to incorporate all the functions we tried like deposit, withdraw, interest calculator, and undo as well. 
+
+Some important test cases I made sure to add in my code was the edge cases. For example when entering the pin number, I made the program return an error if you typed in characters. Then the program safely cleared the previous input and waited for the next input. This is also seen when inputting the amount to deposit, withdraw, and in the interest calculator.
+
+One meaningful bug that I fixed was the undo feature. I spent the most time doing that. Originally the undo feature only reverted your previous transaction and it did not show up in the transaction. I later realized that this was really confusing for the reader so I included it. 
 
 ## Showcase Purpose
 

@@ -2,7 +2,6 @@
 #include "bank.h"
 int main(void)
 {
-    int account_count = 0;
     int choice = 0;
     BroBank bank;
     Stack transactions;
@@ -12,9 +11,10 @@ int main(void)
         return 0;
     }
 
-    brobank_init(&bank);     //initalize account
-    get_balance(&bank);                     //read balance that was saved
-    stackInit(&transactions);
+    brobank_init(&bank);                //initalize account
+    get_balance(&bank);                 //read balance that was saved
+    stackInit(&transactions);           //inialize the stack
+    display_banner();                   //display brobank banner
     while (1)
     {
         handle_bank_menu(&bank);
@@ -38,13 +38,13 @@ int main(void)
             break;
 
         case 5:
-            // Interest Rate Calculator
+            interest_rate_calc();
             break;
         
         case 6:
+            brobank_exit(&bank);
             return 0;
         }
     }
-
     return 0;
 }
