@@ -1,4 +1,3 @@
-[![Open in Visual Studio Code](https://github.com/Daniel-Zhang-SBU/ESE124-Summer2026-Portfolio.git)
 # C Programming Portfolio
 
 ## Daniel Zhang
